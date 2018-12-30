@@ -1,0 +1,63 @@
+
+body {
+	height: auto;
+	padding: 70px 0;
+}
+
+.shelves {
+	.shelf {
+		min-height: 200px;
+	}
+}
+
+.book {
+	&.ui.card {
+		height: 100%;
+
+		.content {
+			display: flex;
+
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+
+		.meta {
+			span {
+				display: block;
+			}
+		}
+	}
+
+	.ui.button {
+		margin: 0;
+	}
+
+	.ui.labeled.icon.button,
+	.ui.labeled.icon.buttons .button {
+		padding-left: 3.57142857em!important;
+		padding-right: 1em!important;
+	}
+
+	.book-image {
+		position: relative;
+
+		padding-top: 150%;
+		overflow: hidden;
+
+		.icon,
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			width: 100%;
+			height: auto;
+
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.search-results-header {
+	margin-top: 50px;
+}
